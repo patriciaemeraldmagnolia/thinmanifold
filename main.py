@@ -1,6 +1,6 @@
-"""converter_ddb08c - CLI application."""
+"""converter_45d60d - CLI application."""
 import argparse, sys, time
-APP_NAME = "converter_ddb08c"
+APP_NAME = "converter_45d60d"
 def parse_args():
     parser = argparse.ArgumentParser(description=APP_NAME)
     parser.add_argument("--verbose", "-v", action="store_true")
